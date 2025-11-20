@@ -11,7 +11,9 @@ Com essa presença online, Mariana vai terá:
 - Facilidade para o paciente encontrar informações essenciais;
 - Transmitir mais confiança e profissionalismo já no primeiro contato.
 
+
 **[Clique aqui para visualizar o projeto no ar](https://markdownlivepreview.com/)**
+
 ![Capa do Projeto](public/capa-do-projeto.webp)
 
 ### 🎨 Arquitetura de Design (UX/UI)
@@ -87,11 +89,13 @@ Siga o passo a passo abaixo para clonar e rodar o projeto localmente:
 
 1. **Clone este repositório**
    ```
-   git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
+   git clone https://github.com/juliamariaa/mariana-silva-psicologa-lp
+   ```
 
 2. **Acesse a pasta do projeto**
     ```
-    cd NOME-DO-REPOSITORIO
+    cd mariana-silva-psicologa-lp
+    ```
     
 3. **Instale as dependências**
     ```
@@ -100,6 +104,7 @@ Siga o passo a passo abaixo para clonar e rodar o projeto localmente:
     ou
     ``` 
     yarn install
+    ```
 
 4. **Execute o projeto em ambiente de desenvolvimento**
     ``` 
@@ -108,6 +113,7 @@ Siga o passo a passo abaixo para clonar e rodar o projeto localmente:
     ou
     ``` 
     yarn dev
+    ```
 
 5. **Abra no navegador**
     ```
