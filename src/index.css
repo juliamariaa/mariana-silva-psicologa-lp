@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+  background-color: #F8F4EC;
+}
+
+@theme{
+
+  /* Fonts */
+  --font-serif: 'PT Serif', serif;
+  --font-sans: 'PT Sans', sans-serif;
+
+  /* Texts */
+  --text-base: 0.5rem / 1rem;       /* 8px / 16px */
+  --text-lg: 1rem / 1.5rem;         /* 16px / 24px */
+  --text-xl: 1.5rem / 2rem;         /* 24px / 32px */
+  --text-2xl: 2rem / 2.5rem;        /* 32px / 40px */
+  --text-3xl: 2.5rem / 3rem;        /* 40px / 48px */
+  --text-4xl: 3rem / 3.5rem;        /* 48px / 56px */
+  --text-5xl: 3.5rem / 4rem;        /* 56px / 64px */
+  --text-6xl: 4rem / 4.5rem;        /* 64px / 72px */
+  --text-7xl: 4.5rem / 5rem;        /* 72px / 80px */
+  --text-8xl: 5rem / 5.5rem;        /* 80px / 88px */
+
+  /* Colors */
+  --color-primary: #6D5BD0;
+  --color-secondary: #C3D4C2;
+  --color-terciary: #B08225;
+  --color-beige: #FFFBF4;
+  --color-gray: #79756D;
+
+  /* Spacing */
+  --spacing-1: 0.25rem;   /* 4px */
+  --spacing-2: 0.5rem;    /* 8px */
+  --spacing-3: 1rem;      /* 16px */
+  --spacing-4: 1.5rem;    /* 24px */
+  --spacing-5: 2rem;      /* 32px */
+  --spacing-6: 2.5rem;    /* 40px */
+  --spacing-7: 3rem;      /* 48px */
+  --spacing-8: 3.5rem;    /* 56px */
+  --spacing-9: 4rem;      /* 64px */
+  --spacing-10: 4.5rem;   /* 72px */
+  --spacing-11: 5rem;     /* 80px */
+  --spacing-12: 5.5rem;   /* 88px */
+  --spacing-13: 6rem;     /* 96px */
+  --spacing-14: 6.5rem;   /* 104px */
+}
