@@ -25,7 +25,7 @@ function TestimonialCards() {
         <div className="flex flex-col items-center gap-10 w-full">
             <div className="overflow-hidden w-full">
                 <div
-                    className="flex gap-9 transition-transform duration-500"
+                    className="flex gap-2 md:gap-9 transition-transform duration-500"
                     style={{
                         transform: `translateX(-${cardAtivo * (100 / visibleCards)}%)`
                     }}
@@ -39,12 +39,9 @@ function TestimonialCards() {
                                 className={`
                                     shrink-0 
                                     flex flex-col justify-center text-center gap-4
-                                    bg-primary rounded p-6
+                                    bg-primary rounded px-6 py-8 md:py-14
                                     transition-all duration-500
-                                    ${isActive
-                                        ? "h-[500px]"
-                                        : "h-[400px] opacity-80"
-                                    }
+                                    ${isActive ? "" : "opacity-60"}
                                 `}
                                 style={{
                                     width: `calc(100% / ${visibleCards})`

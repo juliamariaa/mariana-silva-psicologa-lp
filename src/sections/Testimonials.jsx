@@ -13,7 +13,7 @@ const Testimonials = () => {
           title='Quem já passou por aqui, tem algo importante pra te contar' 
           colorTag='text-terciary'
         />
-
+        
         <TestimonialCards />
       </div>
     </section>
