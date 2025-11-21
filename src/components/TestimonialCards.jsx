@@ -1,9 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
+
+// Data
 import testimonialData from '../data/testimonialData';
 
 function TestimonialCards() {
     const [cardAtivo, setCardAtivo] = useState(0);
     const [visibleCards, setVisibleCards] = useState(3);
+    
+    const [startX, setStartX] = useState(0);
+    const [isSwiping, setIsSwiping] = useState(false);
+    const carouselRef = useRef(null); 
 
     useEffect(() => {
         const updateVisibleCards = () => {
@@ -21,9 +27,90 @@ function TestimonialCards() {
         return () => window.removeEventListener("resize", updateVisibleCards);
     }, []);
 
+    const totalCards = testimonialData.length;
+
+    const navigate = useCallback((direction) => {
+        setCardAtivo(prevCardAtivo => {
+            let newIndex = prevCardAtivo + direction;
+            
+            if (newIndex < 0) {
+                newIndex = 0; 
+            }
+
+            if (newIndex > totalCards - visibleCards) {
+                newIndex = totalCards - visibleCards; 
+            }
+            
+            return newIndex;
+        });
+    }, [totalCards, visibleCards]);
+
+
+    const handleStart = (clientX) => {
+        setStartX(clientX);
+        setIsSwiping(true);
+    };
+
+    const handleEnd = (clientX) => {
+        if (!isSwiping) return;
+
+        const distance = clientX - startX;
+        const threshold = 50; 
+
+        if (distance > threshold) {
+            navigate(-1);
+        } else if (distance < -threshold) {
+            navigate(1);
+        }
+
+        setIsSwiping(false);
+        setStartX(0);
+    };
+    
+    const handleTouchStart = (e) => {
+        handleStart(e.touches[0].clientX);
+    };
+
+    const handleTouchEnd = (e) => {
+        handleEnd(e.changedTouches[0].clientX); 
+    };
+
+    const handleMouseDown = (e) => {
+        handleStart(e.clientX);
+    };
+
+    useEffect(() => {
+        const handleMouseUp = (e) => {
+            if (isSwiping) {
+                 handleEnd(e.clientX);
+            }
+        };
+
+        const handleMouseMove = (e) => {
+            if (isSwiping) {
+                e.preventDefault(); 
+            }
+        };
+
+        window.addEventListener('mouseup', handleMouseUp);
+        window.addEventListener('mousemove', handleMouseMove);
+
+        return () => {
+            window.removeEventListener('mouseup', handleMouseUp);
+            window.removeEventListener('mousemove', handleMouseMove);
+        };
+    }, [isSwiping, startX, navigate, totalCards, visibleCards]); 
+
+
     return (
         <div className="flex flex-col items-center gap-10 w-full">
-            <div className="overflow-hidden w-full">
+            <div 
+                className="overflow-hidden w-full"
+                ref={carouselRef}
+                onTouchStart={handleTouchStart}
+                onTouchEnd={handleTouchEnd}
+                onMouseDown={handleMouseDown}
+            >
                 <div
                     className="flex gap-2 md:gap-9 transition-transform duration-500"
                     style={{
@@ -31,7 +118,7 @@ function TestimonialCards() {
                     }}
                 >
                     {testimonialData.map((item, index) => {
-                        const isActive = cardAtivo === index;
+                        const isActive = index >= cardAtivo && index < cardAtivo + visibleCards; 
 
                         return (
                             <div
@@ -65,17 +152,19 @@ function TestimonialCards() {
 
             <div className="flex gap-3">
                 {testimonialData.map((_, index) => (
-                    <button
-                        key={index}
-                        onClick={() => setCardAtivo(index)}
-                        className={`
-                            w-3 h-3 rounded-full transition-all 
-                            ${cardAtivo === index
-                                ? "bg-terciary scale-125"
-                                : "bg-white hover:bg-terciary"
-                            }
-                        `}
-                    />
+                    index <= totalCards - visibleCards ? (
+                        <button
+                            key={index}
+                            onClick={() => setCardAtivo(index)}
+                            className={`
+                                w-3 h-3 rounded-full transition-all 
+                                ${cardAtivo === index
+                                    ? "bg-terciary scale-125"
+                                    : "bg-white hover:bg-terciary"
+                                }
+                            `}
+                        />
+                    ) : null
                 ))}
             </div>
         </div>
