@@ -14,7 +14,7 @@ Com essa presença online, Mariana vai terá:
 
 **[Clique aqui para visualizar o projeto no ar](https://juliamariaa.github.io/mariana-silva-psicologa-lp/)**
 
-![Capa do Projeto](public/capa-do-projeto.webp)
+![Capa do Projeto](./public/capa-do-projeto.webp)
 
 ### 🎨 Arquitetura de Design (UX/UI)
 
