@@ -12,7 +12,7 @@ Com essa presença online, Mariana vai terá:
 - Transmitir mais confiança e profissionalismo já no primeiro contato.
 
 
-**[Clique aqui para visualizar o projeto no ar](https://markdownlivepreview.com/)**
+**[Clique aqui para visualizar o projeto no ar](https://juliamariaa.github.io/mariana-silva-psicologa-lp/)**
 
 ![Capa do Projeto](public/capa-do-projeto.webp)
 
@@ -20,7 +20,7 @@ Com essa presença online, Mariana vai terá:
 
 O design foi criado para refletir a **leveza e o acolhimento** da psicologia, estabelecendo confiança e seriedade profissional.
 
-**[Clique aqui para visualizar o design completo](https://markdownlivepreview.com/)**
+**[Clique aqui para visualizar o design completo](https://www.behance.net/gallery/240203007/Landing-Page-Mariana-Silva-Psicologa)**
 
 #### Paleta de Cores
 O **Roxo**, cor principal da profissional, foi mantido como destaque. Para equilibrar sua intensidade, foram escolhidos o **Verde Claro** e o **Bronze** como tons complementares. Esta combinação injeta delicadeza e serenidade, essenciais para o tema terapêutico.
