@@ -41,6 +41,7 @@ const Hero = () => {
             className='w-full max-h-[800px]'
             src={MarianaSilvaSmilingProfile} 
             alt="Mariana Silva, psicóloga" 
+            fetchpriority="high"
           />
         </div>
         
