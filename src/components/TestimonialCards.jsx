@@ -156,6 +156,7 @@ function TestimonialCards() {
           <button
             key={index}
             onClick={() => setCardAtivo(index)}
+            aria-label={`Ir para o depoimento ${index + 1}`}
             className={`
                             w-3 h-3 rounded-full transition-all
                             ${
