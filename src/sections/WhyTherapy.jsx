@@ -4,7 +4,7 @@ import TherapyCard from '../components/TherapyCard'
 
 const WhyTherapy = () => {
   return (
-    <section aria-labelledby="why-therapy-title" className='bg-secondary'>
+    <section aria-labelledby="why-therapy-title" className='bg-secondary  min-h-[900px] lg:min-h-[700px]'>
 
       <div className='w-full max-w-[1409px] px-3 2xl:px-0 flex flex-col gap-8 mx-auto py-10 lg:py-14'>
         <SectionHeader id="why-therapy-title" title="A terapia é para você que," textAlign="text-left" />
