@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  font-size-adjust: 0.5;
+}
+
 body{
   background-color: #F8F4EC;
 }
