@@ -31,8 +31,8 @@ const Hero = () => {
               className='h-6 lg:h-7' 
               src={ClientPhotos} 
               alt="Fotos de 5 clientes satisfeitas" 
-              height={160}
-              width={40}
+              width={160}
+              height={40}
             />
             <span className='text-primary text-sm md:text-lg'>+ 500 vidas transformadas</span>
           </div>
