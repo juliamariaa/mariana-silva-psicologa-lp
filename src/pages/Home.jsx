@@ -1,5 +1,3 @@
-import React from 'react';
-
 // Components
 import Hero from '../sections/Hero';
 import WhyTherapy from '../sections/WhyTherapy';

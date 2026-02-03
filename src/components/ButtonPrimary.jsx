@@ -1,5 +1,3 @@
-import React from 'react'
-
 function ButtonPrimary({label, backgroundColor = "bg-primary hover:bg-terciary", }) {
 
   return (

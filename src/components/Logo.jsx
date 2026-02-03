@@ -1,5 +1,3 @@
-import React from 'react';
-
 // Assets 
 import LogoMarianaSilvaPurple from "../assets/logo-mariana-silva-purple.svg";
 import LogoMarianaSilvaWhite from "../assets/logo-mariana-silva-white.svg";

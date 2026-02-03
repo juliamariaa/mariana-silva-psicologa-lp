@@ -1,5 +1,3 @@
-import React from 'react'
-
 // Components
 import SectionHeader from '../components/SectionHeader'
 import TestimonialCards from '../components/testimonialCards'

@@ -1,5 +1,3 @@
-import React from 'react'
-
 // Components
 import Logo from "../components/Logo"
 import ButtonPrimary from "../components/ButtonPrimary"

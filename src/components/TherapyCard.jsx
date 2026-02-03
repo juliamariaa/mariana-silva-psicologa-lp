@@ -1,5 +1,3 @@
-import React from 'react'
-
 function TherapyCard({title, text, colSpan, background = "bg-[url('/src/assets/bg-therapy-beige.webp')]", color = 'text-primary', flexBox='flex flex-col justify-end', divider = 'hidden', maxWidthText}) {
   return (
     <div className={`${flexBox} ${colSpan} ${background} bg-cover bg-no-repeat bg-center w-full h-[300px] p-4 rounded-lg`}>

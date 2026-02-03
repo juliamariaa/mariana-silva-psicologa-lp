@@ -1,5 +1,3 @@
-import React from 'react'
-
 // Assets
 import InstagramFeed from '../assets/InstagramFeed.png'
 

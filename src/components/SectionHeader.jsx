@@ -1,5 +1,3 @@
-import React from 'react'
-
 const SectionHeader = ({tag, title, colorTag = 'text-primary', colorTitle = 'text-primary', textAlign= 'text-center'}) => {
   return (
     <div>
