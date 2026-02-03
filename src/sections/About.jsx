@@ -6,7 +6,7 @@ import MarianaSilvaPortraitSide from "../assets/mariana-silva-portrait-side.png"
 
 const About = () => {
   return (
-    <section>
+    <section  aria-labelledby="about-title">
       <div className='md:max-w-3xl lg:max-w-[1409px] mx-auto px-3 2xl:px-0 flex flex-col xl:flex-row lg:justify-between items-center'>
         <div className='mb-4 lg:mb-0'>
           <img
@@ -17,7 +17,7 @@ const About = () => {
         </div>
 
         <div className='md:max-w-[500px] lg:max-w-[700px] mb-10 xl:mb-0 flex flex-col justify-center items-between gap-3'>
-          <SectionHeader tag="Um pouco sobre" title="Mariana Silva, sua psicóloga" colorTag='text-primary' colorTitle='text-terciary' textAlign="text-left" />
+          <SectionHeader tag="Um pouco sobre" title="Mariana Silva, sua psicóloga" colorTag='text-primary' colorTitle='text-terciary' textAlign="text-left" id="about-title" />
           <p className='text-gray lg:text-[24px]'>
             Graduada em Psicologia pela Universidade Presbiteriana Mackenzie e pós-graduada 
             em Terapia Cognitivo-Comportamental pela PUC-SP. Atua há mais de 8 anos ajudando 
