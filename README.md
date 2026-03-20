@@ -32,11 +32,6 @@ A fotografia da Mariana, com **blusa clara e sorriso acolhedor**, foi escolhida 
 * **PT Serif (Títulos):** Fonte com serifa que confere elegância e profissionalismo, alinhada à credibilidade da psicóloga.
 * **PT Sans (Corpo do Texto):** Fonte sem serifa, limpa e de alta legibilidade, otimizada para textos longos. A combinação equilibra sofisticação com fluidez na leitura.
 
-### 🚀 Performance e Qualidade Técnica
-
-O desenvolvimento desse site segue os padrões de qualidade de código,garantindo total conformidade com as diretrizes WCAG de acessibilidade em cores. A performance do site é excelente e pode ser verificada com as métricas detalhadas na página de monitoramento abaixo ⬇️
-
-
 ### 📁 Tecnologias Utilizadas & Arquitetura do Projeto
 
 #### Tecnologias Utilizadas
